@@ -9,16 +9,30 @@
 <body>
     <div class="container">
         <div class="informacoes">
-            <h1>Bingo</h1>
-            <div class="numero-atual">
-                <h2>Número Sorteado: <br> <span id="numero">Nenhum número foi sorteado ainda!</span></h2>
-            </div>
-            <button id="botaoSortear">Sortear Número</button>
-            <button id="botaoReiniciar">Reiniciar Jogo</button>
-            <div class="numeros-sorteados">
+
+            <div class="parteDeCima">
+                <div class="caixa1">
+                    <div class="caixa2">
+                        <img src="imagens/logoSvgb.svg" alt="">
+                        <div class="caixa1_botao">
+                            <button id="botaoSortear">Sortear Número</button>
+                            <button id="botaoReiniciar">Reiniciar Jogo</button>
+                        </div>
+                    </div>
+
+                    <div class="numero-atual">
+                    <h2>Número Sorteado: <br> <span id="numero">Nenhum número foi sorteado ainda!</span></h2>
+                    </div>
+                </div>
+            
+            <!-- <div class="numeros-sorteados">
                 <h3>Números Sorteados:</h3>
                 <div id="listaNumeros"></div>
-            </div>
+            </div> -->
+        </div>
+        <div class="numeros-sorteados">
+            <h3>Números Sorteados:</h3>
+            <div id="listaNumeros"></div>
         </div>
     </div>
 
