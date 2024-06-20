@@ -8,18 +8,19 @@
 </head>
 <body>
     <div class="container">
-        <h1>Bingo</h1>
-        <div class="current-number">
-            <h2>Número Sorteado: <span id="number">-</span></h2>
-        </div>
-        <button id="drawButton">Sortear Número</button>
-        <button id="resetButton">Reiniciar Jogo</button>
-        <div class="drawn-numbers">
-            <h3>Números Sorteados:</h3>
-            <div id="numbersList"></div>
+        <div class="informacoes">
+            <h1>Bingo</h1>
+            <div class="numero-atual">
+                <h2>Número Sorteado: <br> <span id="numero">Nenhum número foi sorteado ainda!</span></h2>
+            </div>
+            <button id="botaoSortear">Sortear Número</button>
+            <button id="botaoReiniciar">Reiniciar Jogo</button>
+            <div class="numeros-sorteados">
+                <h3>Números Sorteados:</h3>
+                <div id="listaNumeros"></div>
+            </div>
         </div>
     </div>
-
 
     <script src="script.js"></script>
 </body>

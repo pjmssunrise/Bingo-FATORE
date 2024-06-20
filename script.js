@@ -1,41 +1,41 @@
-const drawButton = document.getElementById('drawButton');
-const resetButton = document.getElementById('resetButton');
-const numberDisplay = document.getElementById('number');
-const numbersList = document.getElementById('numbersList');
+const botaoSortear = document.getElementById('botaoSortear');
+const botaoReiniciar = document.getElementById('botaoReiniciar');
+const numeroDisplay = document.getElementById('numero');
+const listaNumeros = document.getElementById('listaNumeros');
 
-let drawnNumbers = [];
-const totalNumbers = 75;
+let numerosSorteados = [];
+const totalNumeros = 75;
 
-drawButton.addEventListener('click', drawNumber);
-resetButton.addEventListener('click', resetGame);
+botaoSortear.addEventListener('click', sortearNumero);
+botaoReiniciar.addEventListener('click', reiniciarJogo);
 
-function drawNumber() {
-    if (drawnNumbers.length >= totalNumbers) {
+function sortearNumero() {
+    if (numerosSorteados.length >= totalNumeros) {
         alert('Todos os números já foram sorteados!');
         return;
     }
 
-    let newNumber;
+    let novoNumero;
     do {
-        newNumber = Math.floor(Math.random() * totalNumbers) + 1;
-    } while (drawnNumbers.includes(newNumber));
+        novoNumero = Math.floor(Math.random() * totalNumeros) + 1;
+    } while (numerosSorteados.includes(novoNumero));
 
-    drawnNumbers.push(newNumber);
-    numberDisplay.textContent = newNumber;
-    updateNumbersList();
+    numerosSorteados.push(novoNumero);
+    numeroDisplay.textContent = novoNumero;
+    atualizarListaNumeros();
 }
 
-function resetGame() {
-    drawnNumbers = [];
-    numberDisplay.textContent = '-';
-    numbersList.innerHTML = '';
+function reiniciarJogo() {
+    numerosSorteados = [];
+    numeroDisplay.textContent = '-';
+    listaNumeros.innerHTML = '';
 }
 
-function updateNumbersList() {
-    numbersList.innerHTML = '';
-    drawnNumbers.forEach(number => {
+function atualizarListaNumeros() {
+    listaNumeros.innerHTML = '';
+    numerosSorteados.forEach(numero => {
         const span = document.createElement('span');
-        span.textContent = number;
-        numbersList.appendChild(span);
+        span.textContent = numero;
+        listaNumeros.appendChild(span);
     });
 }

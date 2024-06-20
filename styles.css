@@ -4,17 +4,38 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    /* width: 100VH; */
     margin: 0;
     background-image: linear-gradient(rgb(0, 0, 146), rgb(255, 115, 0));
 }
 
 .container {
+    position: relative;
     text-align: center;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.794);
+    width: 80%;
     padding: 40px;
     border-radius: 50px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.401);
+    overflow: hidden;
 }
+
+/* .container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    filter: blur(200px);
+    z-index: -1;
+} */
+
+/* .informacoes {
+    position: relative;
+    z-index: 1;
+} */
 
 button {
     margin: 10px;
@@ -31,22 +52,22 @@ button:hover {
     background-color: #0056b3;
 }
 
-.current-number {
+.numero-atual {
     margin: 20px 0;
     font-size: 24px;
 }
 
-.drawn-numbers {
+.numeros-sorteados {
     margin-top: 20px;
 }
 
-#numbersList {
+#listaNumeros {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-#numbersList span {
+#listaNumeros span {
     margin: 5px;
     padding: 10px;
     border: 1px solid #007bff;
@@ -60,7 +81,6 @@ button:hover {
     background-color: #e9ecef;
 }
 
-#resetButton {
+#botaoReiniciar {
     background-color: rgb(255, 111, 0);
 }
-
