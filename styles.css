@@ -9,8 +9,8 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
     /* background-image: linear-gradient(rgb(0, 0, 146), rgb(255, 115, 0)); */
-    background-image: url(imagens/background2.jpeg);
-    backdrop-filter: blur(5px);
+    background-image: url(imagens/WhatsApp\ Image\ 2024-06-21\ at\ 13.38.05.jpeg);
+    backdrop-filter: blur(2px);
 }
 
 .container {
@@ -26,6 +26,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: solid, rgba(255, 111, 0, 0.439), 5px;
 }
 
 /* .container::before {
@@ -100,25 +101,25 @@ button:hover {
     background-color: rgb(255, 133, 39);
 }
 
-.caixa1 {
+/* .caixa1 {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
-}
+} */
 
-.caixa2 img {
-    padding: 30px;
+.informacoes img {
+    /* padding: 30px;
     margin-right: 40px;
     border: solid, black, 3px;
-    border-radius: 50px;
+    border-radius: 50px; */
 }
 
-.caixa1_botao {
+/* .caixa1_botao {
     padding-top: 30px;
     display: flex;
     flex-direction: row;
-}
+} */
 
 .parteDeCima {
     width: 100%;
@@ -138,5 +139,40 @@ img {
 
 .numero-atual {
     width: 50%;
-    padding-left: 10%;
+    /* padding-left: 10%; */
+}
+
+#listaNumeros span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 2px;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid #ff6b20;
+    border-radius: 50px;
+    color: #001b54;
+}
+
+#listaNumeros span.sorteado {
+    background-color: #ff6b20;
+    color: white;
+}
+
+.numero-atual h2 {
+    font-size: 3vh;
+    
+}
+
+.numero-atual {
+    width: 100%;
+    padding-bottom: 20%;
+}
+
+.ultimos-numeros {
+    width: 100%;
+}
+
+.informacoes {
+    text-align: center;
 }
