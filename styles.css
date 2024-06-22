@@ -10,7 +10,7 @@ body {
     background-size: 100%;
     /* background-image: linear-gradient(rgb(0, 0, 146), rgb(255, 115, 0)); */
     background-image: url(imagens/WhatsApp\ Image\ 2024-06-21\ at\ 13.38.05.jpeg);
-    backdrop-filter: blur(2px);
+    /* backdrop-filter: blur(2px); */
 }
 
 .container {
@@ -166,7 +166,7 @@ img {
 
 .numero-atual {
     width: 100%;
-    padding-bottom: 20%;
+    padding-bottom: 10%;
 }
 
 .ultimos-numeros {
@@ -175,4 +175,35 @@ img {
 
 .informacoes {
     text-align: center;
+}
+
+#numeroAtual{
+    border: solid, 2px, orangered;
+    border-radius: 50px;
+    padding: 10px;
+    position: relative;
+    top: 25px;
+    /* margin-top: 100px; */
+}
+
+#numeroAtual span {
+    margin-top: 25px;
+    position: relative;
+    top: 25px;
+}
+
+/* .numero-atual {
+    margin-bottom: 25px;
+} */
+
+#ultimosNumeros {
+    border: solid, 2px, orangered;
+    border-radius: 50px;
+    padding: 10px;
+    position: relative;
+    top: 25px;
+}
+
+.ultimos-numeros h2 {
+    margin-top: 0;
 }
