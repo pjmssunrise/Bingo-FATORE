@@ -207,3 +207,11 @@ img {
 .ultimos-numeros h2 {
     margin-top: 0;
 }
+
+.numeros-sorteados p {
+    color: rgba(0, 0, 0, 0.234);
+}
+
+.numeros-sorteados div {
+    margin-bottom: 5%;
+}
